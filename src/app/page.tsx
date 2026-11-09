@@ -21,11 +21,20 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [freeLettersUsed, setFreeLettersUsed] = useState(0);
   const [isPricingOpen, setIsPricingOpen] = useState(false);
+  const [paymentSuccess, setPaymentSuccess] = useState(false);
 
   useEffect(() => {
     const saved = localStorage.getItem('surat_ai_quota');
     if (saved) {
       setFreeLettersUsed(parseInt(saved, 10) || 0);
+    }
+
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('payment') === 'success') {
+        setPaymentSuccess(true);
+        localStorage.setItem('surat_ai_quota', '0'); // Reset / grant access
+      }
     }
   }, []);
 
@@ -102,6 +111,25 @@ export default function Home() {
       />
 
       <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        {paymentSuccess && (
+          <div className="mb-6 bg-emerald-500 text-white p-4 rounded-xl shadow-lg flex items-center justify-between animate-fade-in no-print">
+            <div className="flex items-center space-x-3">
+              <CheckCircle className="w-6 h-6 shrink-0" />
+              <div>
+                <h4 className="font-bold text-sm">Pembayaran FPX Anda Berjaya!</h4>
+                <p className="text-xs text-emerald-100">
+                  Terima kasih kerana melanggan. Akaun anda kini telah dinaik taraf untuk akses penuh.
+                </p>
+              </div>
+            </div>
+            <button
+              onClick={() => setPaymentSuccess(false)}
+              className="text-white hover:text-emerald-200 text-xs font-semibold px-3 py-1 bg-white/20 rounded-lg"
+            >
+              Tutup
+            </button>
+          </div>
+        )}
         {step === 'selector' && (
           <div className="space-y-12">
             <TemplateSelector
