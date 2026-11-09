@@ -84,7 +84,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose }) =
             <div className="text-center pb-2">
               <span className="text-xs font-semibold text-slate-500 uppercase">Pelan Dipilih:</span>
               <h3 className="text-lg font-extrabold text-slate-900">
-                {selectedPlan === 'pay_per_surat' ? 'Pay-Per-Surat (RM 1.90)' : 'PenaDigital Pro Bulanan (RM 9.90)'}
+                {selectedPlan === 'pay_per_surat' ? 'Pay-Per-Surat (RM 2.00)' : 'PenaDigital Pro Bulanan (RM 10.00)'}
               </h3>
             </div>
 
@@ -213,7 +213,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose }) =
                 </div>
                 <h3 className="text-xl font-bold text-slate-900">Pay-Per-Surat</h3>
                 <div className="mt-3 flex items-baseline">
-                  <span className="text-3xl font-black text-slate-900">RM1.90</span>
+                  <span className="text-3xl font-black text-slate-900">RM2.00</span>
                   <span className="text-xs text-slate-500 ml-1">/ surat</span>
                 </div>
                 <p className="text-xs text-slate-600 mt-2">
@@ -244,7 +244,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose }) =
                 onClick={() => setSelectedPlan('pay_per_surat')}
                 className="mt-6 w-full py-2.5 px-4 text-xs font-bold rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white transition-colors shadow-sm"
               >
-                Bayar RM1.90 (FPX)
+                Bayar RM2.00 (FPX)
               </button>
             </div>
 
@@ -261,7 +261,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose }) =
                 </div>
                 <h3 className="text-xl font-bold text-slate-900">Pro Bulanan</h3>
                 <div className="mt-3 flex items-baseline">
-                  <span className="text-3xl font-black text-slate-900">RM9.90</span>
+                  <span className="text-3xl font-black text-slate-900">RM10.00</span>
                   <span className="text-xs text-slate-500 ml-1">/ bulan</span>
                 </div>
                 <p className="text-xs text-slate-600 mt-2">
@@ -292,7 +292,7 @@ export const PricingModal: React.FC<PricingModalProps> = ({ isOpen, onClose }) =
                 onClick={() => setSelectedPlan('pro')}
                 className="mt-6 w-full py-2.5 px-4 text-xs font-bold rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white transition-all shadow-md"
               >
-                Langgan Pro RM9.90 (FPX)
+                Langgan Pro RM10.00 (FPX)
               </button>
             </div>
           </div>

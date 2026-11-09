@@ -7,17 +7,17 @@ export async function POST(req: Request) {
     const secretKey = process.env.TOYYIBPAY_SECRET_KEY || 'k8bb9jnh-ky3j-9spz-nrv3-jneu3t11qqvg';
     const categoryCode = process.env.TOYYIBPAY_CATEGORY_CODE || '2mvmzkh3';
 
-    // Harga dalam sen (RM 1.90 = 190 sen, RM 9.90 = 990 sen)
-    let billAmount = 990;
+    // Harga dalam sen (RM 2.00 = 200 sen, RM 10.00 = 1000 sen)
+    let billAmount = 1000;
     let billName = 'PenaDigital AI Pro (Bulanan)';
     let billDesc = 'Langganan PenaDigital AI Pro tanpa had surat rasmi standard';
 
     if (planId === 'pay_per_surat') {
-      billAmount = 190;
+      billAmount = 200;
       billName = 'PenaDigital AI 1 Surat (Word & PDF)';
       billDesc = 'Akses 1 surat rasmi format Word & PDF tanpa watermark';
     } else if (planId === 'kumpulan') {
-      billAmount = 2900;
+      billAmount = 3000;
       billName = 'PenaDigital AI Pakej Komuniti / AJK';
       billDesc = 'Akses 3-5 pengguna untuk organisasi dan peniaga';
     }

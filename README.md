@@ -18,7 +18,7 @@ Platform Web Penjana Surat Rasmi standard JPA dan korporat Malaysia menggunakan 
    - Cetak terus PDF A4
 4. **Pilihan Model Harga (Modal RM0):**
    - 3 surat percuma peranti
-   - Pilihan Pay-per-surat (RM1.90) & Pro Bulanan (RM9.90)
+   - Pilihan Pay-per-surat (RM2.00) & Pro Bulanan (RM10.00)
 
 ---
 

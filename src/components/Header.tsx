@@ -43,7 +43,7 @@ export const Header: React.FC<HeaderProps> = ({ freeLettersUsed, maxFreeLetters,
             className="flex items-center space-x-1.5 px-3.5 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white shadow-sm transition-all"
           >
             <Crown className="w-4 h-4" />
-            <span>Langgan Pro <span className="hidden sm:inline">(RM9.90/bln)</span></span>
+            <span>Langgan Pro <span className="hidden sm:inline">(RM10/bln)</span></span>
           </button>
         </div>
       </div>
