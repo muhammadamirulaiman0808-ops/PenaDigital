@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://penadigital.vercel.app'),
   title: 'PenaDigital AI | Penjana Surat Rasmi Format Malaysia',
   description: 'PenaDigital AI - Jana surat rasmi JPA, permohonan cuti, notis peletakan jawatan, rayuan saman dan aduan awam dalam Bahasa Melayu standard dalam masa kurang 30 saat.',
+  verification: {
+    google: 'CHZ9BE_t-pODsmTmvqGU6ZJKMU8WgMVHF9CRGGst2WQ',
+  },
   openGraph: {
     title: 'PenaDigital AI | Penjana Surat Rasmi Format Malaysia',
     description: 'Jana surat rasmi JPA, rayuan saman, surat cuti, dan aduan awam dalam format standard Malaysia dalam 30 saat.',
