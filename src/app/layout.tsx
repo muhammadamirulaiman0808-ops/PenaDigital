@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'PenaDigital AI | Penjana Surat Rasmi Format Malaysia',
   description: 'PenaDigital AI - Jana surat rasmi JPA, permohonan cuti, notis peletakan jawatan, rayuan saman dan aduan awam dalam Bahasa Melayu standard dalam masa kurang 30 saat.',
   verification: {
-    google: 'CHZ9BE_t-pODsmTmvqGU6ZJKMU8WgMVHF9CRGGst2WQ',
+    google: 'UY-yrup0LOwQUeBzTR1qu4OAclY95QTdDLvBCYu0H_A',
   },
   openGraph: {
     title: 'PenaDigital AI | Penjana Surat Rasmi Format Malaysia',
